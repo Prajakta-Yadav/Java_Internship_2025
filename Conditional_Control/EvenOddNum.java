@@ -6,7 +6,7 @@ public class EvenOddNum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number: ");
-        int num = sc.nextInt();
+        float num = sc.nextFloat();
         sc.close();
         if(num == 0){
              System.out.println("The number " + num + " is a neutral.");
