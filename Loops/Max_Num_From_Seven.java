@@ -10,10 +10,10 @@ public class Max_Num_From_Seven{
         for(int Cnt =1; Cnt <=7; Cnt++){
             
             System.out.println("Enter " + Cnt + " Num: ");
-            int Amount = scan.nextInt();
+            int num = scan.nextInt();
             
-            if((Cnt ==1) || (Amount > Max_Num)){
-                Max_Num = Amount;
+            if((Cnt ==1) || (num > Max_Num)){
+                Max_Num = num;
             }
         }
         
