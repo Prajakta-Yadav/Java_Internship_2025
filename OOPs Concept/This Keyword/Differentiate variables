@@ -1,0 +1,16 @@
+public class Box{
+    private int width;
+    
+    //parameterized constructor
+    
+    public Box(int width){
+        
+        this.width = width;
+    }
+    
+    public static void main(String[] args){
+        Box NewBox = new Box(30);
+        
+        System.out.println("The box width is " + NewBox.width);
+    }
+}
