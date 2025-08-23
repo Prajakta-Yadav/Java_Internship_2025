@@ -1,0 +1,15 @@
+class Person{
+    String name;
+    int age;
+    
+    //Default constructor
+    
+    public static void main(String[] args){
+        //The Constructor is called here
+        
+        Person myPerson = new Person();
+        
+        System.out.println("Person Name: " + myPerson.name);
+        System.out.println("Person age: " + myPerson.age);
+    }
+}
