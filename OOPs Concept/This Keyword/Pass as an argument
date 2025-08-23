@@ -1,0 +1,39 @@
+class calculator{
+    public void addAndPrint(int value, myNumber num){
+        num.value += value;
+        System.out.println("The new value is " + num.value);
+        
+    }
+}
+
+class myNumber{
+    int value;
+    
+    // Constructor to initialize the value
+    public myNumber(int value){
+        this.value = value;
+    }
+    
+    public void add(int value, calculator calc){
+        
+        //passing the current object(this) to the addAndPrint Method
+        // sends the current object to another method
+        
+        calc.addAndPrint(value, this);
+    }
+        
+    }
+
+public class Main{
+    public static void main(String[] args){
+        calculator myCalculator = new calculator();
+        
+        myNumber myNum = new myNumber(10);
+        
+        System.out.println("Initial value of myNum is " + myNum.value);
+        
+        myNum.add(5, myCalculator);
+        
+        
+    }
+}
