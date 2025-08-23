@@ -6,7 +6,7 @@ class calculator{
     }
 }
 
-class myNumber{
+public class myNumber{
     int value;
     
     // Constructor to initialize the value
@@ -22,9 +22,6 @@ class myNumber{
         calc.addAndPrint(value, this);
     }
         
-    }
-
-public class Main{
     public static void main(String[] args){
         calculator myCalculator = new calculator();
         
@@ -33,7 +30,6 @@ public class Main{
         System.out.println("Initial value of myNum is " + myNum.value);
         
         myNum.add(5, myCalculator);
-        
         
     }
 }
