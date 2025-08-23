@@ -1,0 +1,26 @@
+class Person{
+    String name;
+    int age;
+    
+    //parameterized constructor
+    
+    public Person(String personName, int personAge){
+        this.name = personName;
+        this.age = personAge;
+        
+        System.out.println("A new person object has been created.");
+        
+    }
+}
+
+public class Main{
+    public static void main(String[] args){
+        //The Constructor is called here
+        
+        Person myPerson = new Person("Alice", 30);
+        
+        System.out.println("Person Name: " + myPerson.name);
+        System.out.println("Person age: " + myPerson.age);
+        
+    }
+}
