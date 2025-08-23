@@ -1,6 +1,7 @@
 // Class Object
 // without create another class for creating and  calling main method. 
 //here create one one car class and write method same class for executeing method.
+//we can create multiple objects in one single class. 
 
 class car{
     String brand;
