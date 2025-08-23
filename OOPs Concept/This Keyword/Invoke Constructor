@@ -1,0 +1,22 @@
+public class Employee{
+    String name;
+    int id;
+    
+    public Employee(String name, int id){
+        this.name = name;
+        this.id = id;
+        
+    }
+    //call another constructor in the same class to avoid the code duplication. 
+
+    public Employee (String name){
+        this(name,0);
+    }
+    
+    public static void main(String[] args){
+        Employee newEmployee = new Employee("Prajakta");
+        
+        System.out.println("Employee name is " + newEmployee.name);
+        
+    }
+}
