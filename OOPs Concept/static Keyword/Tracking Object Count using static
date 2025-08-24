@@ -1,0 +1,33 @@
+class Product{
+    
+    static int productCount=0;
+    
+    String name;
+    double Price;
+    
+    
+    //Constructor 
+    
+    public Product(String name, double Price){
+        this.name = name;
+        this.Price = Price;
+        productCount++;
+    }
+    
+    //static NoSuchMethodError
+    
+    public static int getProductCount(){
+        return productCount++;
+        
+    }
+    
+    public static void main(String[] args){
+        
+        Product p1 = new Product("Laptop", 125000);
+        Product p2 = new Product("Smartphone", 55500);
+        Product p3 = new Product("Headphones", 25000);
+        
+                                                            //call static method using class name
+        System.out.println("Total number of products created:" + Product.getProductCount());
+    }
+}
