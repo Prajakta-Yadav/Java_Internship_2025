@@ -1,0 +1,44 @@
+class user{
+   
+    private static int nextUserId =10;
+    private int userId;
+    private String username;
+
+//we can create static method inside a constructor. its accessible from any part of the class, including the constructor.
+//the constructor is responsible for initializing an object. 
+
+//we can't declare a top-level class with the static keyword. we can declare a nested class as static. 
+//it's essentially an inner class that behaves like a static member of the outer class. 
+
+    private static int generateUniqueId(){
+        return nextUserId++;
+    }
+    
+    //constructor
+    
+    public user(String username){
+        
+        //calling the static method from within the constructor
+        
+        this.userId = generateUniqueId();
+        this.username = username;
+    }
+    
+    public int getUserId(){
+        return userId;
+    }
+    
+    public String getUsername(){
+        return username;
+    }
+  
+    public static void main(String[] args){
+        
+        user User1 = new user("Prajakta");
+        user User2 = new user("Teju");
+        
+        System.out.println("User 1 Id: " + User1.getUserId());
+        System.out.println("User 2 Id: " + User2.getUserId());
+        
+    }
+}
