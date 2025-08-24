@@ -1,0 +1,16 @@
+class Calculator{
+    static int add (int a, int b){
+        return a+b;
+        
+    }
+//only Static members access static variables and methods. non-static (instance) members cannot access directly.
+//Static methods can be called directly using class name 
+    
+    public static void main(String[] args){
+
+    //calling Static method using class name
+        int result = Calculator.add(5,7); 
+        
+        System.out.println("Result is: " + result);
+    }
+}
