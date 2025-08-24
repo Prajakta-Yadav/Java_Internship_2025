@@ -1,0 +1,22 @@
+public class Car{
+    private String color;
+    
+    public Car setColor(String color){
+        this.color = color;
+        return this; // return the current object
+    }
+    
+    public void printColor(){
+        System.out.println("Color: " + this.color);
+        
+    }
+    
+    //Enables method chaining for a more readable and  fluent API
+    
+    public static void main(String[] args){
+        
+        Car myCar = new Car();
+        
+        myCar.setColor("Red").printColor();
+    }
+}
